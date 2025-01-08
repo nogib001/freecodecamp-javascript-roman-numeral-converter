@@ -1,0 +1,114 @@
+:root {
+    --background: #CAC198;
+    --font-color: #7f2122;
+    --form-color: #FACD1E;
+    --btn-color: #7f2122;
+    }
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  
+  #logo {
+    display: block;
+    margin: 1rem auto;
+    width: 20rem;
+    max-width: 100%;
+  }
+  
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Garamond", "Georgia", serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--background);
+    color: var(--font-color);
+  }
+  
+  main {
+    margin-top: 1rem;
+    width: 28rem;
+    background-color: var(--form-color);
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  fieldset {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0;
+  }
+  
+  fieldset > label {
+    margin-bottom: 1rem;
+  }
+  
+  #convert-btn {
+    background-color: var(--btn-color);
+    border: none;
+    color: white;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 0.6;
+    transition: 0.3s;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0.2rem;
+  }
+  
+  #convert-btn:hover {opacity: 1}
+  
+  #output {
+    display: none;
+    max-width: 28rem;
+    max-height: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--form-color);
+    border-radius: 0.2rem;
+  }
+  
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
